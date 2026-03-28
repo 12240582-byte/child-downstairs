@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c3e50; /* 深色背景，讓遊戲區域更明顯 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* 防止螢幕滾動 */
+}
+
+#game-container {
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* 稍微圓角修飾 */
+    overflow: hidden; /* 隱藏 canvas 超出的部分 */
+    background-color: #000; /* 給遊戲一個底色設定 */
+}
+
+canvas {
+    display: block;
+    background-color: #ecf0f1; /* 遊戲背景色 - 淺灰色 */
+}
